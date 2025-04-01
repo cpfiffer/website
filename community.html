@@ -183,7 +183,7 @@
             gap: 2rem;
             font-size: 4rem;
             width: 100%;
-            padding-bottom: 4rem;
+            padding-bottom: 0rem;
             padding-top: 2rem;
         }
 
@@ -316,6 +316,72 @@
                 padding-top: 1rem;
             }
         }
+
+        .community {
+            margin: 2rem 0;
+            padding: 2.5rem;
+            background: #1a1a1a;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .community pre {
+            margin: 0;
+            font-family: "VT323", monospace;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .community code {
+            display: block;
+            white-space: pre-wrap;
+        }
+
+        /* JSON syntax highlighting */
+        .community .string {
+            color: #98c379;
+        }
+
+        .community .key {
+            color: #61afef;
+            font-weight: bold;
+        }
+
+        .community .number {
+            color: #d19a66;
+        }
+
+        .community .boolean {
+            color: #56b6c2;
+        }
+
+        .community .null {
+            color: #c678dd;
+        }
+
+        .community a {
+            color: #98c379;
+            transition: color 0.2s ease;
+        }
+
+        .community a:hover {
+            color: #7ec699;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 770px) {
+            .community {
+                padding: 1.5rem;
+            }
+            
+            .community pre {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -329,97 +395,25 @@
         <!-- Navebar -->
         <div class="navbar">
             <img src="star.gif" />
-            <a href="https://blog.dottxt.co" target="_blank">blog</a>
-            <a href="https://github.com/outlines-dev/outlines" target="_blank">github</a>
-            <a href="https://jobs.ashbyhq.com/dottxt" target="_blank">careers</a>
-            <a href="community.html">community</a>
-            <!-- <a href="https://h1xbpbfsf0w.typeform.com/to/ZgBCvJHF">sign up</a> -->
+            <a href="index.html">home</a>
             <img src="star.gif" />
         </div>
 
-        <!-- Manifesto -->
-        <div class="manifesto">
-            There are hidden rules in every system.
-            <br />
-            <br />
-            Rules to govern the sentences we write, the software we code,
-            and the music we play. These rules aren’t created to subjugate,
-            but to integrate. Without them, the different parts of a system
-            can’t work together to form something greater.
-            <br />
-            <br />
-            Some believe that these rules reflect our unique way of thinking and conceiving the world.
-            But for computers alike, without structure there is chaos.
-            Keywords and variable names, out of order, don’t make a program.
-            You need a grammar — <i>a syntax</i> — to make the system work.
-            <br />
-            <br />
-            For almost a century, we’ve been teaching our machines the
-            grammars of our world to help us work, play, and create better.
-            But as of yet, our AIs remain stubbornly resistant to learning
-            them. While they can string together sentences to emulate human
-            syntax, they’ve yet to learn the syntax of computer, and of the
-            applications that run our world.
-            <br />
-            <br />
-            Without more <i>predictable</i> outputs, LLMs simply can’t be
-            integrated into our systems and businesses. It’s their
-            fundamental flaw.
-            <br />
-            <br />
-            We believe that this demands a new programming paradigm, which
-            allows LLMs to respond in a way that software understands. Until
-            then, our generations are fun. But they are not transformative.
-            <br />
-            <br />
-            Until then, it’s just the beginning for how AI will change our
-            world.
-            <br />
-            <br />
-            <h1>
-                Our mission is to help AI speak the language of every
-                application
-            </h1>
-            This is why we built <span class="dottxt-inline">.txt</span>. A tool to make LLMs reliable
-            enough for the world to build on. A spellcheck for programming
-            the future. And more broadly, an ecosystem where developers can
-            design, execute, deploy, and evaluate LLM applications.
-            <br />
-            <br />
-            But how? LLMs are probabilistic by nature, so we believe the
-            only solution is implementing guard rails at the outset based on
-            your unique criteria… taking all potential probabilities and
-            setting all the useless ones to zero. In other words, <span class="dottxt-inline">.txt</span> stops
-            LLMs from making errors before they even make them.
-            <br />
-            <br />Fewer tokens. Less money. More efficiency. We are not the
-            average AI engineers.
-            <br />
-            <br />
-            We cut our teeth in applied statistical modeling — a job where
-            you make bespoke models specially designed to give only correct
-            answers. To us, applying this field to LLMs is the logical next
-            step. The missing layer that will make AI truly useful, cutting
-            out the noise and uncertainty endemic to LLMs.
-            <br />
-            <br />
-            It’s the thing that makes LLMs act like <i>computers</i>.
-            Finally. If your goal is to sound conversational and believable
-            enough, the everyday language works just fine. But to be good
-            enough to <i>compute</i> with, the level of clarity must be far
-            higher. In this sense, LLMs are, ironically, a regression!
-            <br />
-            <br />
-            So, let’s create the new rules for AI and invent a new way to
-            <i>program</i> with them… together.
-            Join the discussion on <a href="https://discord.gg/ErZ8XnCmkQ">Discord</a>.
-            Post at us on <a href="https://x.com/dottxtai">Twitter</a> or
-            <a href="https://bsky.app/profile/dottxtai.bsky.social">Bluesky</a>.
-            We can’t wait to see what you create!
-            <br />
-            <br />
-            -Remi, Brandon, and Dan
+        <!-- Community -->
+        <div class="community">
+            <pre><code>{
+  <span class="key">"socials"</span>: {
+    <span class="key">"github"</span>: <span class="string">"<a href='https://github.com/dottxt-ai/outlines'>https://github.com/dottxt-ai/outlines</a>"</span>,
+    <span class="key">"discord"</span>: <span class="string">"<a href='https://discord.gg/ErZ8XnCmkQ'>https://discord.gg/ErZ8XnCmkQ</a>"</span>,
+    <span class="key">"linkedin"</span>: <span class="string">"<a href='https://www.linkedin.com/company/dottxt'>https://www.linkedin.com/company/dottxt</a>"</span>,
+    <span class="key">"x"</span>: <span class="string">"<a href='https://x.com/dottxtai'>https://x.com/dottxtai</a>"</span>,
+    <span class="key">"bluesky"</span>: <span class="string">"<a href='https://bsky.app/profile/dottxtai.bsky.social'>https://bsky.app/profile/dottxtai.bsky.social</a>"</span>,
+    <span class="key">"blog"</span>: <span class="string">"<a href='https://blog.dottxt.co'>https://blog.dottxt.co</a>"</span>,
+    <span class="key">"careers"</span>: <span class="string">"<a href='https://jobs.ashbyhq.com/dottxt'>https://jobs.ashbyhq.com/dottxt</a>"</span>
+  }
+}</code></pre>
         </div>
+
         <hr />
         <form
             action='https://dottxt.us12.list-manage.com/subscribe/post?u=aec344375257ff07dcf9a6ef6&amp;id=922982b042&amp;f_id=00db4ee0f0'
